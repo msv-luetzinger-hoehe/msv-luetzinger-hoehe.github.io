@@ -4,7 +4,7 @@ main:
   - title: "Veranstaltungen"
     url: /categories/
   - title: "Modelle"
-    url: /tags/
+    url: /modelle/
   - title: "Aufbau/Umbau"
     url: /about/
   - title: "Abstürze"
