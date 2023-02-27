@@ -68,6 +68,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/msvlutzingerhohe/"
+    - label: "Google Maps"
+      icon: "fas fa-map-marker-alt"
+      url: "https://goo.gl/maps/NioHY8Ex6RPtpSkH7"
 
 footer:
   links:
@@ -77,6 +80,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/msvlutzingerhohe/"
+    - label: "Google Maps"
+      icon: "fas fa-map-marker-alt"
+      url: "https://goo.gl/maps/NioHY8Ex6RPtpSkH7"
 
 defaults:
   # _posts
