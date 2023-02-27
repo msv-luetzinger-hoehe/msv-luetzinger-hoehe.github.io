@@ -4,11 +4,11 @@ permalink: /modelle/
 author_profile: true
 ---
 
-```{r, results = 'asis'}
-
-plots <- list.files("/bilder/modelle")
-
-for(i in plots){
-  filename <- file.path("plot", i)
-  cat("![text](",filename,")")
-```
+![ ](/bilder/modelle/M1.jfif)
+![ ](/bilder/modelle/M2.jpg)
+![ ](/bilder/modelle/M3.jfif)
+![ ](/bilder/modelle/M4.jpg)
+![ ](/bilder/modelle/M5.jpg)
+![ ](/bilder/modelle/M6.jpg)
+![ ](/bilder/modelle/M7.jpg)
+![ ](/bilder/modelle/M8.jpg)
