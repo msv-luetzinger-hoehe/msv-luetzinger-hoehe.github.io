@@ -1,9 +1,11 @@
 main:
-  - title: "Posts"
+  - title: "Vorstand"
     url: /posts/
-  - title: "Categories"
+  - title: "Veranstaltungen"
     url: /categories/
-  - title: "Tags"
+  - title: "Modelle"
     url: /tags/
-  - title: "About"
+  - title: "Aufbau/Umbau"
+    url: /about/
+    - title: "Abstürze"
     url: /about/
