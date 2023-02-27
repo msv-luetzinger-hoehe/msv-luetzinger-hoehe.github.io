@@ -1,6 +1,6 @@
 ---
-title: "Vorstand"
-permalink: /vorstand/
+title: "Veranstaltungen"
+permalink: /veranstaltungen/
 author_profile: true
 ---
 
