@@ -2,10 +2,10 @@ main:
   - title: "Vorstand"
     url: /vorstand/
   - title: "Veranstaltungen"
-    url: /categories/
+    url: /veranstaltungen/
   - title: "Modelle"
     url: /modelle/
   - title: "Aufbau/Umbau"
-    url: /about/
+    url: /aufbauumbau/
   - title: "Abstürze"
-    url: /about/
+    url: /abstürze/
