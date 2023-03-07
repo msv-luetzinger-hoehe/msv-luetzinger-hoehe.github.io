@@ -24,7 +24,7 @@ github_username: username
 minimal_mistakes_skin: "air"
 search: false
 header:
-  image: /assets/images/bio-photo.jpg
+  image: "/assets/images/bio-photo.jpg"
 
 
 
