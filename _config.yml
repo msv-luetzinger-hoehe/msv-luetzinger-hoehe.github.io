@@ -23,6 +23,10 @@ twitter_username: username
 github_username: username
 minimal_mistakes_skin: "air"
 search: false
+header:
+  image: "/assets/images/bio-photo.jpg"
+
+
 
 # Build settings
 markdown: kramdown
