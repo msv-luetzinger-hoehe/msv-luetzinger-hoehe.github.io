@@ -9,3 +9,5 @@ main:
     url: /aufbauumbau/
   - title: "Abstürze"
     url: /abstuerze/
+  - title: "Mitgliedschaft"
+    url: /mitgliedschaft/
