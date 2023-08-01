@@ -1,3 +1,9 @@
+---
+title: "Impressum"
+permalink: /impressum/
+author_profile: true
+---
+
 #Impressum
 Angaben gemäß § 5 TMG
 Modellsportverein Lützinger Höhe e.V.
