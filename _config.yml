@@ -88,7 +88,6 @@ footer:
       icon: "fas fa-map-marker-alt"
       url: "https://goo.gl/maps/NioHY8Ex6RPtpSkH7"
     - label: "Impressum"
-      icon: "fas fa-map-marker-alt"
       url: "./impressum.html"
 
 defaults:
