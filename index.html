@@ -27,8 +27,60 @@ Koordinaten des Flugplatz: <br>
   <a href="/mitgliedsantrag.pdf">Mitgliedsantrag</a>
 </div>
 <br>
-<iframe width='300' height='125' name='CW2' style='border:1px solid;border-radius:10px;border-color:transparent;'
- src='https://api.wetteronline.de/wetterwidget?gid=10520&modeid=CW2&seourl=brohl-luetzing&locationname=Brohl-Lützing&lang=de'>
-</iframe>
+<div id="wetter-widget" data-src="https://api.wetteronline.de/wetterwidget?gid=10520&amp;modeid=CW2&amp;seourl=brohl-luetzing&amp;locationname=Brohl-Lützing&amp;lang=de">
+  <p>
+    Durch das Laden des Wetter-Widgets werden Daten (z.&nbsp;B. Ihre IP-Adresse) an WetterOnline übertragen und
+    dort verarbeitet. Weitere Details finden Sie in unserer <a href="/datenschutz/">Datenschutzerklärung</a>.
+  </p>
+  <button type="button">Wetter-Widget laden</button>
+</div>
+<script>
+  (function () {
+    var container = document.getElementById('wetter-widget');
+    if (!container) { return; }
+
+    var consentKey = 'msv-wetter-widget-consent';
+    var src = container.getAttribute('data-src');
+
+    function loadWidget() {
+      if (container.getAttribute('data-loaded') === 'true') { return; }
+      var iframe = document.createElement('iframe');
+      iframe.width = '300';
+      iframe.height = '125';
+      iframe.name = 'CW2';
+      iframe.style.border = '1px solid';
+      iframe.style.borderRadius = '10px';
+      iframe.style.borderColor = 'transparent';
+      iframe.setAttribute('src', src);
+      iframe.setAttribute('title', 'WetterOnline Wetter-Widget');
+      container.innerHTML = '';
+      container.appendChild(iframe);
+      container.setAttribute('data-loaded', 'true');
+    }
+
+    try {
+      if (window.localStorage && localStorage.getItem(consentKey) === 'true') {
+        loadWidget();
+        return;
+      }
+    } catch (err) {
+      // Ignorieren, falls Local Storage nicht verfügbar ist.
+    }
+
+    var button = container.querySelector('button');
+    if (button) {
+      button.addEventListener('click', function () {
+        loadWidget();
+        try {
+          if (window.localStorage) {
+            localStorage.setItem(consentKey, 'true');
+          }
+        } catch (err) {
+          // Ignorieren, falls Local Storage nicht verfügbar ist.
+        }
+      });
+    }
+  }());
+</script>
 <br>
 </p>
